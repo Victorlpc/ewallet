@@ -9,10 +9,16 @@
   font-weight: 300;
 }
 
+@keyframes fadein{
+  from{opacity: 0;}
+  to  {opacity: 1;}
+}
+
 body {
   background-color: #f0f2f5;
   height: 100vh;
   position: relative;
+  animation: fadein 1s;
 }
 
 .content {
@@ -22,7 +28,7 @@ body {
 }
 
 #popupbackground {
-  background-color: rgba(0, 0, 0, 0.699);
+  background-color: rgba(0, 0, 0, 0.726);
   width: 100vw;
   height: 100vh;
   z-index: 5;
@@ -60,7 +66,7 @@ form input, form select, form button {
   border-radius: 5px;
   margin: auto 5px;
   margin-top: 10px;
-  flex: 1;
+  flex:1;
   border: 1px solid transparent;
   transition: border-color linear 0.3s;
 }
@@ -79,7 +85,7 @@ form label{
 form button{
   background-color: #7c0061;
   color: #fff;
-  margin-top: 30px;
+  margin-top:30px;
   transition: background linear 0.2s;
 }
 
@@ -112,7 +118,7 @@ form button:hover{
   padding: 20px;
   margin-right: 20px;
 }
-.card_title {
+.card-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,7 +186,7 @@ tbody td svg {
 
 #addButton a {
   color: #fff;
-  border-radius: 50%;
+  border-radius: 50%; /*Deixa qualquer elemento redondo*/
   padding: 15px;
   display: flex;
   align-items: center;
@@ -191,8 +197,8 @@ tbody td svg {
   background-color: #12a454;
   border-radius: 50%;
   position: absolute;
-  right: 0%;
-  bottom: 0%;
+  right: 0;
+  bottom: 0;
   margin-right: 70px;
   margin-bottom: 50px;
   transition: background 2s;
